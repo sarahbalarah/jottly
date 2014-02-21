@@ -1,0 +1,171 @@
+body {
+	background-color: #FFF;
+	color: #595959;
+
+}
+
+header{
+	background-color: #FFF;
+	background-image: url('../images/office.png');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	min-height: 531px;
+	text-align: center;
+}
+
+h1 {
+	color: #56495d;
+	font-size: 3.125em;
+	font-family: "Bree Serif", Times, serif;
+	text-align: center;
+	margin: 0 0 15px 0;
+}
+
+h2 {
+	color: #f3775c;
+	font-size: 2.188em;
+	font-family: "Bree Serif", Times, serif;
+	text-align: center;
+}
+
+p {
+	font-size: 1.125em;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	text-align: center;
+	line-height: 23px;
+}
+
+a, a:visited {
+	text-decoration: none;
+}
+
+img {
+		max-width: 100%;
+}
+
+header h1 {
+	padding-top: 100px;
+
+}
+
+header p {
+	padding-bottom: 15px;
+}
+
+div#browsers {
+	margin-top: -140px;
+	text-align: center;
+}
+
+.info {
+	border-top: 1px solid #ecebeb;
+	margin-top: -6px;
+	padding: 50px 193px;
+}
+
+.info img {
+	display: inline;
+	padding-right: 15px;
+}
+
+.info h2 {
+	text-align: left;
+}
+
+.info p {
+	text-align: left;
+}
+
+div#write {
+	width: 400px;
+	float: left;
+}
+
+div#write img {
+	float: left;
+	display: inline;
+	padding-right: 15px;
+}
+
+div#collaborate {
+	margin-left: 200px;
+}
+
+div#collaborate img {
+	float: left;
+	display: inline;
+	padding-right: 15px;
+}
+
+#signup {
+	background-color: #FFF;
+	background: url('../images/working.png'); 
+  background-size: cover;
+  background-position: center center;
+	margin: 0px;
+	min-height: 292px;
+	text-align: center;
+}
+
+#signup h2 {
+	padding-top: 55px;
+	padding-bottom: 10px;
+}
+
+#signup p {
+	padding-bottom: 20px;
+}
+
+.logo {
+	float: left;
+	margin: 15px 0 0 15px;
+}
+
+.signin_button {
+	font-size: 1.125em;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	margin: 15px 15px 0 0;
+	padding: 10px 15px;
+	font-weight: bold;
+	color: #f3775c;
+	border: 1px solid #f3775c;
+	border-radius: 0px;
+	float: right;
+}
+
+.signin_button:visited {
+	color: #f3775c;
+	border: 1px solid #f3775c;
+}
+
+.signin_button:hover {
+	color: #FFF;
+	border: 1px solid #FFF;
+	background-color: #f3775c;
+}
+
+.signup_button {
+	font-size: 1.125em;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #FFF;
+	padding: 10px 15px;
+	background-color: #f9a900; 
+}
+
+.signup_button:visited {
+	color: #FFF;
+	background-color: #f9a900; 
+}
+
+.signup_button:hover {
+	color: #FFF;
+	background-color: #e09900; 
+}
+
+.footer {
+	float: right;
+	padding: 18px 15px 0 0;
+}
