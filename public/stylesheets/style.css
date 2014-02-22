@@ -1,7 +1,45 @@
+
+/* Fix Skeleton brokenness. */
+.columns.omega {
+	float: right;
+}
+
 body {
 	background-color: #FFF;
 	color: #595959;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Bree Serif", Times, serif;
+	text-align: inherit;
+	line-height: 1em;
+	margin-bottom: .25em;
+}
+
+h1 {
+	color: #56495d;
+	font-size: 3.125em;
+	margin: 0 0 15px 0;
+}
+
+h2 {
+	color: #f3775c;
+	font-size: 2.188em;
+}
+
+p {
+	text-align: inherit;
+	line-height: 1.5em;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+a, a:visited {
+	text-decoration: none;
 }
 
 header {
@@ -15,30 +53,9 @@ header {
 	text-align: center;
 }
 
-h1 {
-	color: #56495d;
-	font-size: 3.125em;
-	font-family: "Bree Serif", Times, serif;
-	text-align: center;
-	margin: 0 0 15px 0;
-}
-
-h2 {
-	color: #f3775c;
-	font-size: 2.188em;
-	font-family: "Bree Serif", Times, serif;
-	text-align: center;
-}
-
-p {
-	font-size: 1.125em;
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	text-align: center;
-	line-height: 23px;
-}
-
-a, a:visited {
-	text-decoration: none;
+header section {
+	padding-top: 100px;
+	box-sizing: border-box;
 }
 
 .logo {
@@ -47,8 +64,6 @@ a, a:visited {
 }
 
 .signin_button {
-	font-size: 1.125em;
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	margin-top: 15px;
 	padding: 10px 15px;
 	font-weight: bold;
@@ -56,6 +71,7 @@ a, a:visited {
 	border: 1px solid #f3775c;
 	border-radius: 0px;
 	float: right;
+	text-transform: uppercase;
 }
 
 .signin_button:visited {
@@ -69,22 +85,13 @@ a, a:visited {
 	background-color: #f3775c;
 }
 
-header h1 {
-	padding-top: 100px;
-	display: block;
-}
-
-header p {
-	padding-bottom: 15px;
-}
-
 .signup_button {
-	font-size: 1.125em;
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	display:inline-block;
 	font-weight: bold;
 	color: #FFF;
 	padding: 10px 15px;
 	background-color: #f9a900; 
+	text-transform: uppercase;
 }
 
 .signup_button:visited {
@@ -100,49 +107,35 @@ header p {
 .browsers {
 	margin-top: -140px;
 	text-align: center;
+	border-bottom: 1px solid #ecebeb;
+}
+
+.browsers img {
+	display: block;
+	margin: 0 auto;
 }
 
 .info {
-	border-top: 1px solid #ecebeb;
-	margin-top: -6px;
 	padding: 50px 0;
+	text-align: left;
+}
+
+.info .columns {
+	margin-bottom: 1em;
 }
 
 .info img {
+	float: left;
 	display: inline;
 	padding-right: 15px;
-}
-
-.info h2 {
-	text-align: left;
 }
 
 .info p {
-	text-align: left;
+	padding-right: 2em;
 }
 
-div#write {
-	width: 390px;
-	height: 125px;
-	display: inline;
-}
-
-div#write img {
-	float: left;
-	display: inline;
-	padding-right: 15px;
-}
-
-div#collaborate {
-	height: 125px;
-	width: 390px;
-	display: inline;
-}
-
-div#collaborate img {
-	float: left;
-	display: inline;
-	padding-right: 15px;
+.info .omega p {
+	text-align: justify;
 }
 
 .signup {
@@ -155,38 +148,66 @@ div#collaborate img {
 	margin: 0px;
 	min-height: 292px;
 	text-align: center;
+	padding-top: 72px;
+	box-sizing: border-box;
 }
 
 .signup h2 {
-	padding-top: 55px;
-	padding-bottom: 10px;
-}
-
-.signup p {
-	padding-bottom: 20px;
+	padding-bottom: .25em; /* because the text has a descender in it. */
 }
 
 .footer {
-	float: right;
-	padding: 18px 15px 0 0;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	color: #ccc;
+}
+.footer p {
+	font-size: .7em;
+	margin: 0;
+	padding: 0;
+}
+
+@media only screen and (max-width: 959px) {
+	.info .omega p {
+		text-align: left;
+	}
+	.info p {
+		padding-right: 0;
+	}	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+}
+
+@media only screen and (max-width: 767px) {
+	header {
+		min-height: 450px
+	}
+	.browsers {
+		display: none;
+	}
+	.info {
+		padding: 30px 0;
+	}
 }
 
 @media only screen and (max-width: 479px) {
-h1 {
-	font-size: 2.813em;
-}
+	body {
+		font-size: 14px;
+	}
 
-h2 {
-	font-size: 1.750em;
-	margin-bottom: 0;
-}
+	h1 {
+		font-size: 2.813em;
+	}
 
-p {
-	font-size: 1em;
-	line-height: 18px;
-}
-.browsers {
-	display: none;
-}
+	h2 {
+		font-size: 1.750em;
+	}
 
+	.info {
+		padding: 15px 0;
+	}
+	.info img {
+		display: none;
+	}
 }
