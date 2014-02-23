@@ -32,10 +32,14 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
+	<!-- SMALL THING - IF YOU ARE GOING TO INCLUDE THE APPLE TOUCH ICONS MAKE SURE YOU ADD/SUPPORT ALL RESOLUTION SIZES. REVIEW THEIR DOCUMENTATION FOR THE CORRECT SIZES TO SUPPORT -->
+
 	<!-- Fonts
 	================================================== -->
 	<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<!-- YOU SHOULD BE ABLE TO CONDENSE THIS DOWN TO ONE LINE OF CODE. WHEN USING GOOGLE WEB FONTS IF YOU ADD BOTH TO YOUR COLLECTION IT SHOULD GIVE YOU ONE LINE TO ADD -->
 
 
 
@@ -45,19 +49,21 @@
 	<header>
 		<div class="container">
 			<nav>
+				<!-- WE SHOULD ADD A HREF LINK. A / WOULD CALL THE INDEX PAGE. THAT WAY WHEN THE LOGO IS CLICKED IT WILL TAKE YOU TO A HOMEPAGE. WE SHOULD ALSO STAY WAY FROM PUTTING STYLES IN OUR HTML PAGES. LET'S MOVE THE WIDTH OF THE LOGO TO THE STYLESHEET. -->
 				<a href="#" class="logo" ><img src="images/logo.svg" alt="Jott.ly" width="90"/></a>
 				<a href="#" class="signin_button">Sign In</a>
 			</nav>
 			<section>
-				<h1>An easier way to</br>write and collaborate</h1>
-		   	<p>Everything you need to edit, post and share</br>content with your whole company.</p>
+				<h1>An easier way to<br>write and collaborate</h1>
+		   	<p>Everything you need to edit, post and share<br>content with your whole company.</p>
 		   	<p><a href="#" class="signup_button">Start Your Free Trial</a></p>
-		  </section>
+		   	<!-- WHY IS THIS LINK INSIDE OF A <p> TAG -->
+		  </section> <!-- I USUALLY ONLY USE SECTION TAGS FOR MAIN PARENTS, I WOULD CHANGE THE MAIN DIV THAT HAS THE CLASS CONTAINER TO THE SECTION AND CHANGE THIS SECTION TO A DIV TAG -->
 	 	</div>
 	 </header>
 
 
-	<div class="browsers">
+	<div class="browsers"><!-- COULD WE COMBINE THIS DIV WITH THE DIV BELOW AND JUST CALL BOTH CLASSES -->
 		<div class='container'>
 	 		<img class="scale-with-grid" src="images/browsers.png"/>
 	 	</div>
@@ -66,12 +72,12 @@
 	<section class="info">
 	 	<div class="container clearfix">
 				<div class="eight columns alpha">
-				<img src="images/write.svg" width="125"/>
+				<img src="images/write.svg" width="125"/><!-- LET'S REMOVE THIS INLINE STYLE AND PLACE IT IN THE STYLESHEET -->
 				<h2>Write</h2>
 				<p>Share what you need to with your team. Contract proofs to dentist appointments.</p>
 			</div>
 			<div class="eight columns omega">
-				<img src="images/collaborate.svg" width="125"/>
+				<img src="images/collaborate.svg" width="125"/><!-- LET'S REMOVE THIS INLINE STYLE AND PLACE IT IN THE STYLESHEET -->
 				<h2>Collaborate</h2>
 				<p>Question about paragraph two? Notice that typo? Work together to get the job done.</p>
 			</div>
@@ -81,12 +87,12 @@
   <section class="signup">
   	<h2>Want to give it a try?</h2>
   	<p>Try us out for 14 days, obligation free.</p>
-  	<p><a href="#" class="signup_button">Start Your Free Trial</a></p>
+  	<p><a href="#" class="signup_button">Start Your Free Trial</a></p><!-- WHY IS THIS LINK INSIDE OF A <p> TAG -->
   </section>
 
   <footer class="footer">
   	<div class='container'>
-  		<p>© 2014 Jottly. All Rights Reserved</p>
+  		<p>© 2014 Jottly. All Rights Reserved</p><!-- FIX THE COPYRIGHT ICON TO THE RIGHT HTML ENCODE -->
   	</div>
   </footer>
 

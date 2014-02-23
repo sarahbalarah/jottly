@@ -1,3 +1,11 @@
+//NOTES ON STYLESHEET
+	//OVERALL THIS IS REALLY CLEAN NICE WORK
+	//TRY REVEIEWING THE SELECTOR BACKGROUND THERE ARE A FEW PLACES 
+		WHERE YOU ARE USING BACKGROUND'S VARIOUS PROPERTIES AND YOU COULD
+		COMBINE THEM DOWN TO ONE LINE OF CODE VS FOUR OR SO
+	//MAKE SURE YOU ARE CONSISTENT WITH FONT-SIZES, PICK EMs OR PXs
+	//
+
 
 /* Fix Skeleton brokenness. */
 .columns.omega {
@@ -53,6 +61,7 @@ header {
 	text-align: center;
 }
 
+//WE SHOULD BE MORE SPECIFIC ABOUT WHAT SECTION WE ARE CALLING ON
 header section {
 	padding-top: 100px;
 	box-sizing: border-box;
@@ -63,13 +72,15 @@ header section {
 	margin-top: 15px;
 }
 
+//WONDERING IF WE SHOULD MAKE MORE GLOBAL BUTTONS RATHER THAN VERY SPECIFIC BUTTONS. THAT WAY WE CAN USE THEM MORE THROUGH OUT THE SITE AND NOT HAVE TO REPEAT CSS
+
 .signin_button {
 	margin-top: 15px;
 	padding: 10px 15px;
 	font-weight: bold;
 	color: #f3775c;
 	border: 1px solid #f3775c;
-	border-radius: 0px;
+	border-radius: 0px; //NOT SURE WE NEED THIS, BORDER RADIUS IS NATURALLY 0
 	float: right;
 	text-transform: uppercase;
 }
@@ -77,7 +88,7 @@ header section {
 .signin_button:visited {
 	color: #f3775c;
 	border: 1px solid #f3775c;
-}
+} //WE SHOULD MOVE THIS TO BELOW HOVER, JUST FROM A FLOW STANDPOINT IT GOES BUTTON, BUTTON:HOVER, BUTTON:ACTIVE, BUTTON:VISITED
 
 .signin_button:hover {
 	color: #FFF;
@@ -150,7 +161,7 @@ header section {
 	text-align: center;
 	padding-top: 72px;
 	box-sizing: border-box;
-}
+}//WE COULD CONDENSE THIS CODE BLOCK DOWN
 
 .signup h2 {
 	padding-bottom: .25em; /* because the text has a descender in it. */
@@ -177,7 +188,7 @@ header section {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-}
+} //WE CAN REMOVE THIS IF WE ARE NOT USING IT AT ALL
 
 @media only screen and (max-width: 767px) {
 	header {
