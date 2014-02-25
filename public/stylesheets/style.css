@@ -1,11 +1,3 @@
-//NOTES ON STYLESHEET
-	//OVERALL THIS IS REALLY CLEAN NICE WORK
-	//TRY REVEIEWING THE SELECTOR BACKGROUND THERE ARE A FEW PLACES 
-		WHERE YOU ARE USING BACKGROUND'S VARIOUS PROPERTIES AND YOU COULD
-		COMBINE THEM DOWN TO ONE LINE OF CODE VS FOUR OR SO
-	//MAKE SURE YOU ARE CONSISTENT WITH FONT-SIZES, PICK EMs OR PXs
-	//
-
 
 /* Fix Skeleton brokenness. */
 .columns.omega {
@@ -51,18 +43,15 @@ a, a:visited {
 }
 
 header {
-	background-color: #FFF;
-	background-image: url('../images/office.png');
+	background: #FFF url('../images/office.png') center center;
+	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	background-size: cover;
-	background-position: center center;
 	min-height: 531px;
 	text-align: center;
 }
 
-//WE SHOULD BE MORE SPECIFIC ABOUT WHAT SECTION WE ARE CALLING ON
-header section {
+header div {
 	padding-top: 100px;
 	box-sizing: border-box;
 }
@@ -72,15 +61,16 @@ header section {
 	margin-top: 15px;
 }
 
-//WONDERING IF WE SHOULD MAKE MORE GLOBAL BUTTONS RATHER THAN VERY SPECIFIC BUTTONS. THAT WAY WE CAN USE THEM MORE THROUGH OUT THE SITE AND NOT HAVE TO REPEAT CSS
-
+.logo img {
+	width: 90px;
+}
 .signin_button {
 	margin-top: 15px;
 	padding: 10px 15px;
 	font-weight: bold;
 	color: #f3775c;
 	border: 1px solid #f3775c;
-	border-radius: 0px; //NOT SURE WE NEED THIS, BORDER RADIUS IS NATURALLY 0
+	border-radius: 0px;
 	float: right;
 	text-transform: uppercase;
 }
@@ -88,7 +78,7 @@ header section {
 .signin_button:visited {
 	color: #f3775c;
 	border: 1px solid #f3775c;
-} //WE SHOULD MOVE THIS TO BELOW HOVER, JUST FROM A FLOW STANDPOINT IT GOES BUTTON, BUTTON:HOVER, BUTTON:ACTIVE, BUTTON:VISITED
+}
 
 .signin_button:hover {
 	color: #FFF;
@@ -105,14 +95,14 @@ header section {
 	text-transform: uppercase;
 }
 
-.signup_button:visited {
-	color: #FFF;
-	background-color: #f9a900; 
-}
-
 .signup_button:hover {
 	color: #FFF;
 	background-color: #e09900; 
+}
+
+.signup_button:visited {
+	color: #FFF;
+	background-color: #f9a900; 
 }
 
 .browsers {
@@ -149,28 +139,30 @@ header section {
 	text-align: justify;
 }
 
+.info img {
+	width: 125px;
+}
+
 .signup {
-	background-color: #FFF;
-	background: url('../images/working.png'); 
+	background: #FFF url('../images/working.png') center center; 
   background-size: cover;
   -webkit-background-size: cover;
 	-moz-background-size: cover;
-  background-position: center center;
 	margin: 0px;
 	min-height: 292px;
 	text-align: center;
 	padding-top: 72px;
 	box-sizing: border-box;
-}//WE COULD CONDENSE THIS CODE BLOCK DOWN
+}
 
 .signup h2 {
 	padding-bottom: .25em; /* because the text has a descender in it. */
 }
 
 .footer {
-	padding-top: .25em;
-	padding-bottom: .25em;
+	padding: .25em 0;
 	color: #ccc;
+	text-align: right;
 }
 .footer p {
 	font-size: .7em;
@@ -187,9 +179,6 @@ header section {
 	}	
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-} //WE CAN REMOVE THIS IF WE ARE NOT USING IT AT ALL
-
 @media only screen and (max-width: 767px) {
 	header {
 		min-height: 450px
@@ -204,7 +193,7 @@ header section {
 
 @media only screen and (max-width: 479px) {
 	body {
-		font-size: 14px;
+		font-size: .875em;
 	}
 
 	h1 {
