@@ -1,0 +1,213 @@
+
+/* Fix Skeleton brokenness. */
+.columns.omega {
+	float: right;
+}
+
+body {
+	background-color: #FFF;
+	color: #595959;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Bree Serif", Times, serif;
+	text-align: inherit;
+	line-height: 1em;
+	margin-bottom: .25em;
+}
+
+h1 {
+	color: #56495d;
+	font-size: 3.125em;
+	margin: 0 0 15px 0;
+}
+
+h2 {
+	color: #f3775c;
+	font-size: 2.188em;
+}
+
+p {
+	text-align: inherit;
+	line-height: 1.5em;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+a, a:visited {
+	text-decoration: none;
+}
+
+header {
+	background: #FFF url('../images/office.png') center center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	min-height: 531px;
+	text-align: center;
+}
+
+header div {
+	padding-top: 100px;
+	box-sizing: border-box;
+}
+
+.logo {
+	float: left;
+	margin-top: 15px;
+}
+
+.logo img {
+	width: 90px;
+}
+.signin_button {
+	margin-top: 15px;
+	padding: 10px 15px;
+	font-weight: bold;
+	color: #f3775c;
+	border: 1px solid #f3775c;
+	border-radius: 0px;
+	float: right;
+	text-transform: uppercase;
+}
+
+.signin_button:visited {
+	color: #f3775c;
+	border: 1px solid #f3775c;
+}
+
+.signin_button:hover {
+	color: #FFF;
+	border: 1px solid #FFF;
+	background-color: #f3775c;
+}
+
+.signup_button {
+	display:inline-block;
+	font-weight: bold;
+	color: #FFF;
+	padding: 10px 15px;
+	background-color: #f9a900; 
+	text-transform: uppercase;
+}
+
+.signup_button:hover {
+	color: #FFF;
+	background-color: #e09900; 
+}
+
+.signup_button:visited {
+	color: #FFF;
+	background-color: #f9a900; 
+}
+
+.browsers {
+	margin-top: -140px;
+	text-align: center;
+	border-bottom: 1px solid #ecebeb;
+}
+
+.browsers img {
+	display: block;
+	margin: 0 auto;
+}
+
+.info {
+	padding: 50px 0;
+	text-align: left;
+}
+
+.info .columns {
+	margin-bottom: 1em;
+}
+
+.info img {
+	float: left;
+	display: inline;
+	padding-right: 15px;
+}
+
+.info p {
+	padding-right: 2em;
+}
+
+.info .omega p {
+	text-align: justify;
+}
+
+.info img {
+	width: 125px;
+}
+
+.signup {
+	background: #FFF url('../images/working.png') center center; 
+  background-size: cover;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	margin: 0px;
+	min-height: 292px;
+	text-align: center;
+	padding-top: 72px;
+	box-sizing: border-box;
+}
+
+.signup h2 {
+	padding-bottom: .25em; /* because the text has a descender in it. */
+}
+
+.footer {
+	padding: .25em 0;
+	color: #ccc;
+	text-align: right;
+}
+.footer p {
+	font-size: .7em;
+	margin: 0;
+	padding: 0;
+}
+
+@media only screen and (max-width: 959px) {
+	.info .omega p {
+		text-align: left;
+	}
+	.info p {
+		padding-right: 0;
+	}	
+}
+
+@media only screen and (max-width: 767px) {
+	header {
+		min-height: 450px
+	}
+	.browsers {
+		display: none;
+	}
+	.info {
+		padding: 30px 0;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	body {
+		font-size: .875em;
+	}
+
+	h1 {
+		font-size: 2.813em;
+	}
+
+	h2 {
+		font-size: 1.750em;
+	}
+
+	.info {
+		padding: 15px 0;
+	}
+	.info img {
+		display: none;
+	}
+}
